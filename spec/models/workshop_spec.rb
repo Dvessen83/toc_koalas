@@ -19,5 +19,9 @@ RSpec.describe Workshop, type: :model do
       workshop.valid?
       expect(workshop.errors).to have_key(:link_github)
     end
+
+    it "has a valid factory" do
+      expect(create(:workshop).valid?).to eq(true)
+    end
   end
 end
