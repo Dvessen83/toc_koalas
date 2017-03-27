@@ -42,6 +42,8 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'factory_girl_rails', '4.7.0'
   gem 'faker', '1.6.6'
+  gem 'shoulda'
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 group :test do
