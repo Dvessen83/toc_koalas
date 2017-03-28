@@ -32,6 +32,16 @@ ActiveRecord::Schema.define(version: 20170327145129) do
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
   end
 
+  create_table "workshops", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "image"
+    t.string   "link_live_demo"
+    t.string   "link_github"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
   create_table "sponsors", force: :cascade do |t|
     t.string   "sponsor"
     t.string   "logo"
