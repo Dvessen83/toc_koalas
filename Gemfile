@@ -39,8 +39,11 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
+  gem 'guard-rspec'
   gem 'factory_girl_rails', '4.7.0'
   gem 'faker', '1.6.6'
+  gem 'shoulda'
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 group :test do
@@ -60,3 +63,11 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise', '~> 4.2'
+
+gem 'bootstrap-sass', '~> 3.3.6'
+
+source 'https://rubygems.org'
+
+ruby '2.3.1'
+
+gem 'rails_12factor', group: :production
