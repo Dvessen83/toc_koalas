@@ -10,14 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20170327124530) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+
   create_table "sponsors", force: :cascade do |t|
     t.string   "sponsor"
     t.string   "logo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string   "title"
+    t.string   "image"
+    t.string   "location"
+    t.string   "spaces"
+    t.boolean  "available"
+    t.string   "workshop"
+    t.string   "sponsor"
+    t.boolean  "public"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
