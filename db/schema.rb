@@ -16,21 +16,14 @@ ActiveRecord::Schema.define(version: 20170327144042) do
   enable_extension "plpgsql"
 
   create_table "events", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "pages", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "sponsors", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "workshops", force: :cascade do |t|
+    t.string   "title"
+    t.string   "image"
+    t.string   "location"
+    t.string   "spaces"
+    t.boolean  "available"
+    t.string   "workshop"
+    t.string   "sponsor"
+    t.boolean  "public"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
