@@ -10,14 +10,7 @@
 
   <body>
     <div class="container-fluid">
-      <% if notice.present? %>
-        <p class="alert alert-info" role="alert"><%= notice %></p>
-      <% elsif alert.present? %>
-        <p class="alert alert-danger" role="alert"><%= alert %></p>
-      <% end %>
-      <div class="row">
         <%= yield %>
-      </div>
     </div>
   </body>
 </html>
