@@ -12,24 +12,21 @@
   z-index: 10;
 }
 
-.jumbotron {
+.mainscreen-filler {
   background-color: transparent !important;
   text-align: center;
   color: antiquewhite !important;
   margin-bottom: 100px !important;
 }
 
-.col-md-4 {
-  text-align: center;
-}
-
-.cent {
+.centerscreen {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+
 footer{
   color: antiquewhite;
   text-align: center;
