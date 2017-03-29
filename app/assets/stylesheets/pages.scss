@@ -3,30 +3,35 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .home-background {
-    background-image: url("cold-snow-winter-mountain.jpeg");
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 10;
+  background-image: url("cold-snow-winter-mountain.jpeg");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
 }
 
 .jumbotron {
-    background-color: transparent !important;
-    text-align: center;
-    color: antiquewhite !important;
-    margin-bottom: 100px !important;
+  background-color: transparent !important;
+  text-align: center;
+  color: antiquewhite !important;
+  margin-bottom: 100px !important;
 }
 
 .col-md-4 {
-    text-align: center;
+  text-align: center;
 }
 
 .cent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+footer{
+  color: antiquewhite;
+  text-align: center;
+  margin-top: 20px;
 }
