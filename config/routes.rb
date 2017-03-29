@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   get "sponsor" => "pages#sponsor"
   devise_for :admins
 
-  resources :pages
   resources :workshops
   resources :sponsors
   resources :events do
