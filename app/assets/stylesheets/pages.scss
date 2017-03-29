@@ -32,3 +32,17 @@ footer{
   text-align: center;
   margin-top: 20px;
 }
+
+.no-border
+{
+  border: 0 !important;
+}
+
+.no-bgcolor{
+  background-color: transparent !important;
+}
+
+.toc-btn{
+  margin-left: 20px !important;
+  border-radius: 0 !important;
+}
