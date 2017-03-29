@@ -3,9 +3,11 @@ Rails.application.routes.draw do
 
 
   root to: "pages#home"
-  get "attend" => "pages#attend"
-  get "incompany" => "pages#incompany"
-  get "sponsor" => "pages#sponsor"
+
+  get "attend", to: "pages#attend"
+  get "incompany", to: "pages#incompany"
+  get "sponsor", to: "pages#sponsor"
+
   devise_for :admins
 
   resources :workshops
