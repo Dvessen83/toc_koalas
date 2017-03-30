@@ -14,11 +14,13 @@ describe "what you will learn section" do
 
     expect(page).to have_content "HTML"
   end
+  
   it "shows CSS" do
     visit attend_path
 
     expect(page).to have_content "CSS"
   end
+  
   it "shows JavaScript" do
     visit attend_path
 
