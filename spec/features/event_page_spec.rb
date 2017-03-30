@@ -6,4 +6,12 @@ describe "Attendee Page" do
 
     expect(page).to have_content "Events"
   end
+
+  describe "footer" do
+    it "includes copyright" do
+      visit attend_path
+
+      expect(page).to have_content "&copy"
+    end
+  end
 end
