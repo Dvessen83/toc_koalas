@@ -34,7 +34,16 @@ footer{
 }
 
 .top-banner{
-  background-color: darkgrey;
+  background-image: url("cold-snow-winter-mountain.jpeg");
+  background-size: cover;
   height: 400px;
   text-align: center;
+  color: antiquewhite;
+
+}
+
+.vertical-align-mid{
+  position: relative;
+  top: 40%;
+
 }
