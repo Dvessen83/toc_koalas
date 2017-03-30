@@ -50,6 +50,18 @@ footer{
   margin-top: 20px;
 }
 
+.no-border
+{
+  border: 0 !important;
+}
+
+.no-bgcolor{
+  background-color: transparent !important;
+}
+
+.toc-btn{
+  margin-left: 20px !important;
+  border-radius: 0 !important;
 
 .top-banner{
   background-image: url("cold-snow-winter-mountain.jpeg");
@@ -63,8 +75,6 @@ footer{
   position: relative;
   top: 45%;
 
-
 .sponsors{
   margin-top: 20px;
-
 }
