@@ -1,12 +1,13 @@
 require 'rails_helper'
 
-describe "attend page" do
-  it "shows information about attending TOC" do
-    visit attend_path
 
-    expect(page).to have_content "Attend TOC"
+  describe "attend page" do
+    it "shows information about attending upcoming TOC" do
+      visit attend_path
+
+      expect(page).to have_content  "Upcoming Events"
+      end
     end
-  end
 
   describe "sponsor page" do
     it "shows information about sponsoring TOC" do
@@ -21,5 +22,19 @@ describe "attend page" do
       visit incompany_path
 
       expect(page).to have_content "In-Company"
+    end
+
+    it "page contains workshops" do
+      visit incompany_path
+
+      expect(page).to have_content "workshops"
+    end
+  end
+
+  describe "check video" do
+    it "includes the video from TOC" do
+     visit attend_path
+
+      expect(page).to have_text("Testimonials")
     end
   end

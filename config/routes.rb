@@ -15,4 +15,10 @@ Rails.application.routes.draw do
   resources :events do
     resources :attendees
   end
+  resources :incompanyrequests
+
+  namespace :admin do
+    resources :workshops, :sponsors, :events
+    resources :incompanyrequests, only: [:index, :show, :edit, :update, :destroy]
+  end
 end
