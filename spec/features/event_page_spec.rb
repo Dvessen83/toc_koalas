@@ -8,10 +8,10 @@ describe "Attendee Page" do
   end
 
   describe "footer" do
-    it "includes copyright" do
+    it "includes date" do
       visit attend_path
 
-      expect(page).to have_content "&copy"
+      expect(page).to have_content Date.today.year
     end
   end
 end
