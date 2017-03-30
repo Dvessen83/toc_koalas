@@ -23,3 +23,11 @@ describe "attend page" do
       expect(page).to have_content "In-Company"
     end
   end
+
+  describe "check video" do
+    it "includes the video from TOC" do
+     visit attend_path
+
+      expect(page).to have_text("Testimonials")
+    end
+  end
