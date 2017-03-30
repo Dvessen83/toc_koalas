@@ -22,4 +22,10 @@ describe "attend page" do
 
       expect(page).to have_content "In-Company"
     end
+
+    it "page contains workshops" do
+      visit incompany_path
+
+      expect(page).to have_content "workshops"
+    end
   end
