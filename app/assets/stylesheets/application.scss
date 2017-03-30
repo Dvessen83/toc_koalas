@@ -1,20 +1,21 @@
-/*
-*=require_tree
-*=require_self
-*/
- @import "bootstrap-sprockets";
- @import "bootstrap";
 
- .thumbnail img {
-    height:250px;
-}
+ *= require_tree .
+ *= require_self
+ 
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-.thumbnail {
-  border: 0;
-}
 h2 {
   color: #4b4d5e
 }
 h4 {
   color: #828493
+
+.thumbnail {
+  border: 0;
 }
+
+.thumbnail img {
+  height: 250px;
+
+
