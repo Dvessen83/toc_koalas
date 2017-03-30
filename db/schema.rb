@@ -10,7 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20170330143620) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,13 +38,15 @@ ActiveRecord::Schema.define(version: 20170330143620) do
     t.string   "title"
     t.string   "image"
     t.string   "location"
-    t.string   "spaces"
-    t.boolean  "available"
-    t.string   "workshop"
-    t.string   "sponsor"
     t.boolean  "public"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "sponsor_id"
+    t.integer  "workshop_id"
+    t.integer  "spaces"
+    t.datetime "date"
+    t.index ["sponsor_id"], name: "index_events_on_sponsor_id", using: :btree
+    t.index ["workshop_id"], name: "index_events_on_workshop_id", using: :btree
   end
 
   create_table "in_company_requests", force: :cascade do |t|
@@ -76,5 +80,10 @@ ActiveRecord::Schema.define(version: 20170330143620) do
     t.datetime "updated_at",     null: false
   end
 
+
+  add_foreign_key "events", "sponsors"
+  add_foreign_key "events", "workshops"
+
   add_foreign_key "in_company_requests", "workshops"
+
 end
