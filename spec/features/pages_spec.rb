@@ -30,3 +30,11 @@ require 'rails_helper'
       expect(page).to have_content "workshops"
     end
   end
+
+  describe "check video" do
+    it "includes the video from TOC" do
+     visit attend_path
+
+      expect(page).to have_text("Testimonials")
+    end
+  end
