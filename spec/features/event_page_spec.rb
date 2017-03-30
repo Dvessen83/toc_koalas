@@ -6,6 +6,14 @@ describe "Attendee Page" do
 
     expect(page).to have_content "Events"
   end
+
+  describe "footer" do
+    it "includes date" do
+      visit attend_path
+
+      expect(page).to have_content Date.today.year
+    end
+  end
 end
 
 describe "what you will learn section" do
